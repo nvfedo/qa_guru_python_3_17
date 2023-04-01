@@ -2,9 +2,9 @@ from selene import have
 from utils.base_session import demowebshop
 
 
-def test_login():
-    response = demowebshop.post('/login', data={'Email': 'nvfedoqaguru3_16@mail.ru', 'Password': 'asdfgh'}, allow_redirects=False)
-    assert response.status_code == 302
+def test_login(register):
+    register.open('')
+    register.element('.account').should(have.exact_text('nvfedoqaguru3_16@mail.ru'))
 
 
 def test_add_cart():
