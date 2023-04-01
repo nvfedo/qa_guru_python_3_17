@@ -94,6 +94,15 @@ ipython_config.py
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow
 __pypackages__/
 
+# .idea/
+.idea/
+
+# tests/allure-results/
+tests/allure-results/
+
+# allure-results/
+allure-results/
+
 # Celery stuff
 celerybeat-schedule
 celerybeat.pid
